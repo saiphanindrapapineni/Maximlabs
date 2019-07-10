@@ -1,0 +1,14 @@
+def func(string):
+    s = ''
+    Length = len(string)
+    for i in range(Length+1):
+        for j in range(Length+1):
+            n = string[i:j]
+            if len(n) == len(set(n)):
+                if len(s) < len(n):
+                    k = n
+                    
+    return len(s)
+
+
+print(func(input()))
